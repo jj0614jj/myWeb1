@@ -1,0 +1,390 @@
+/* 米自是萬用字圓符號 => 所有的HTML標籤 */
+* {
+    /* 取消預設邊界 */
+    margin: 0;
+    /* 取消預設縮排 */
+    padding: 0;
+    /* 字型設定 */
+    font-family: 微軟正黑體;
+}
+
+a {
+    color: #fff;
+}
+
+.wrap {
+    /* 固定寬度 */
+    width: 1200px;
+    /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
+    margin: auto;
+    /* 文字及物件的置中對齊 */
+    /* text-align: center; */
+}
+
+body {
+    
+    background-color: #f2e9c6;
+}
+
+/* 頁首區 */
+.header {
+    /* 對齊線 border */
+    /* border: 1px solid red; */
+    /* 背景圖 */
+    background-image: url("../images/cc-bg-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 350px;
+    text-align: center;
+    /* 定位基準點 */
+    position: relative;
+}
+
+/* 頁首區-左側文字 */
+/* 首頁區-左側超連結清單水平排列 */
+.header .icon {
+    position: absolute;
+    left: 80px;
+    top: 40px;
+    /* 超連結字體顏色 */
+    color: #ffffff;
+}
+
+/* 首頁區左側超連結取消底線 */
+.header .icon a {
+    /* 選單區超連結底線:取消 */
+    text-decoration: none;
+}
+
+/* 首頁區超連結被碰到時的變化 */
+.header .icon a:hover {
+    background-color: orangered;
+    color: #fff
+}
+
+/* 頁首區-左側文字 */
+/* 複合式規則 => 超過兩個以上的規則名稱(包含兩個) */
+.header h1 {
+    position: absolute;
+    left: 488px;
+    top: 160px;
+}
+
+.header .box {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header .box img {
+    /* 圓形大頭貼=>寬度的一半(相對單位%) */
+    width: 60%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.header .box h3 {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* 頁首區-右側超連結 */
+.header ul {
+    /* 絕對定位 */
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    /* 取消項目符號 */
+    list-style: none;
+}
+
+/* 頁首區-右側超連結清單水平排列 */
+.header ul li {
+    float: left;
+    /* 右側超連結項目間距 */
+    margin-right: 20px;
+}
+
+/* 頁首區-右側超連結色彩 */
+.header ul li a {
+    color: #fff;
+    /* 選單區超連結底線:取消 */
+    text-decoration: none;
+
+}
+
+/* 頁首區-右側超連結被碰到時的變化 */
+.header ul li a:hover {
+    background-color: orangered;
+    color: #fff
+}
+
+* {
+    /* 取消預設邊界 */
+    margin: 0;
+    /* 取消預設縮排 */
+    padding: 0;
+    /* 字型設定 */
+    font-family: 微軟正黑體;
+}
+
+.blank {
+    /* 對齊線 border */
+    /* border: 1px solid red; */
+    /* background-color: #f2e9c6; */
+    background-color: rgb(231, 202, 173);
+    /* 寬度 */
+    width: 1200px;
+    /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
+    margin: auto;
+    /* 高度 */
+    height: 100px;
+    /* 字體大小 */
+    font-size: 30px;
+
+}
+
+.blank p {
+    margin-top: 10px;
+}
+
+/* 身體區 */
+.main {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(38, 0, 255); */
+    background-color: rgb(231, 202, 173);
+    /* 寬度 */
+    width: 1200px;
+    /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
+    margin: auto;
+    /* 高度 */
+    /* height: 1800px; */
+    height: auto;
+
+
+    /* 放大字體 */
+    font-size: 20px;
+    /* 行距-單位為 行 因此不需要輸入單位 */
+    line-height: 1.5;
+    padding-bottom: 20px;
+
+}
+
+
+
+.main .box {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(245, 204, 23); */
+    /* 寬度 */
+    width: 1200px;
+    /* 高度 */
+    /* height: 500px; */
+    height: auto;
+
+}
+
+.box1 {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(245, 204, 23); */
+    /* display:flex 意思是 彈性佈局 ，它能夠擴展和收縮flex 容器內的元素，以最大限度地填充可用空間。 */
+    display: flex;
+    /* 平均分配寬度和間距 */
+    justify-content: space-between
+}
+
+.box1 h2 {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(105, 126, 14); */
+    /* height: 450px; */
+    /* 寬度 */
+    width: 250px;
+    padding-top: 50px;
+
+    /* text-align: center; */
+    margin-left: 30px;
+    /* 字體大小 */
+    font-size: 40px;
+
+}
+
+.box2 {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(228, 154, 85); */
+
+}
+
+.box2 p {
+    /* 寬度 */
+    width: 230px;
+    /* 高度 */
+    height: 140px;
+    padding-top: 70px;
+    /* 字體大小 */
+    font-size: 25px;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.learn1 {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(228, 85, 85); */
+
+    /* width: 650px; */
+    height: 255px;
+}
+
+.learn2 {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(228, 85, 85); */
+
+    /* width: 650px; */
+    height: 235px;
+}
+
+.learn3 {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(228, 85, 85); */
+
+    /* width: 650px; */
+    height: 200px;
+}
+
+.work1 {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(228, 85, 85); */
+
+    /* width: 650px; */
+    height: 260px;
+}
+
+.work2 {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(228, 85, 85); */
+
+    /* width: 650px; */
+    height: 440px;
+}
+
+.work3 {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(228, 85, 85); */
+
+    /* width: 650px; */
+    height: 200px;
+}
+
+.box3 {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(135, 85, 228); */
+    /* 離頂部高度 */
+    margin-top: 65px;
+    width: 650px;
+    height: auto;
+    /* height: 350px; */
+
+    text-align: left;
+
+}
+
+.box3 h1 {
+    /* 字體大小 */
+    font-size: 30px;
+    text-align: left;
+    /* margin-right: 80px; */
+
+}
+
+.box3 li {
+    font-weight: bold;
+}
+
+.footer {
+    /* 對齊線 border */
+    /* border: 1px solid red; */
+    /* 寬度 */
+    width: 1200px;
+    /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
+    margin: auto;
+    /* 高度 */
+    /* height: 200px; */
+    background-color: #514133;
+    color: #fff;
+    /* text-align: center; */
+    padding: 0px 0px;
+
+}
+
+.footer .nav ul {
+    /* 對齊線 border */
+    /* border: 1px solid rgb(208, 255, 0); */
+    /* 項目清單選項 ● 取消 */
+    list-style: none;
+
+    /* 設定元素內容與元素自身上邊界的間距 */
+    padding-top: 20px;
+    /* 設定元素內容與元素自身下邊界的間距 */
+    padding-bottom: 0px;
+    /* display: inline; */
+
+}
+
+.footer .nav ul li {
+    /* 對齊線 border */
+    /* border: 1px solid red; */
+
+    /* 水平排列 */
+    display: inline-block;
+
+    /* 外間距=> margin */
+    margin-left: 150px;
+
+}
+
+.footer .nav ul li a {
+    /* 選單區超連結 */
+    /* 選單區超連結文字顏色 */
+    color: #fff;
+    font-size: 16px;
+    /* 選單區超連結底線:取消 */
+    text-decoration: none;
+    /* 內間距(縮排)=> padding */
+    /* 順時針方向設定 上 右 下 左  */
+    /* padding: 10px 20px 10px 20px; */
+    padding: 10px 20px;
+
+    /* 外間距=> margin */
+    margin-left: 10px;
+}
+
+.footer .nav ul li a img {
+    /* 對齊線 border */
+    /* border: 1px solid red; */
+
+    /* 寬度 */
+    width: 20px;
+    /* 高度 */
+    height: 20px;
+    /* 靠右對齊 */
+    float: right;
+    /* 行內區塊可水平排列 */
+    display: inline-block;
+    /* 外間距=> margin */
+    margin-right: 5px;
+
+}
+
+/* 頁尾區 */
+.footer1 {
+    /* 寬度 */
+    width: 1200px;
+    /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
+    margin: auto;
+    background-color: #514133;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

@@ -1,0 +1,207 @@
+/* 米自是萬用字圓符號 => 所有的HTML標籤 */
+* {
+    /* 取消預設邊界 */
+    margin: 0;
+    /* 取消預設縮排 */
+    padding: 0;
+    /* 字型設定 */
+    font-family: 微軟正黑體;
+}
+
+a {
+    color: #fff;
+}
+
+.wrap {
+    /* 固定寬度 */
+    width: 1200px;
+    /* 段隨著網頁移動: div 的網頁(頁邊)置中對齊 */
+    margin: auto;
+    /* 文字及物件的置中對齊 */
+    /* text-align: center; */
+}
+
+.body {
+    background-color: #f2e9c6;
+}
+
+/* 頁首區 */
+.header {
+    /* 對齊線 border */
+    /* border: 1px solid red; */
+    /* 背景圖 */
+    background-image: url("../images/cc-bg-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 600px;
+    text-align: center;
+    /* 定位基準點 */
+    position: relative;
+}
+
+/* 頁首區-左側文字 */
+/* 首頁區-左側超連結清單水平排列 */
+.header diV {
+    position: absolute;
+    left: 80px;
+    top: 40px;
+    /* 超連結字體顏色 */
+    color: #ffffff;
+}
+
+/* 首頁區左側超連結取消底線 */
+.header diV a {
+    /* 選單區超連結底線:取消 */
+    text-decoration: none;
+}
+
+/* 選首頁區超連結被碰到時的變化 */
+.header diV a:hover {
+    background-color: orangered;
+    color: #fff
+}
+
+/* 頁首區-左側文字 */
+/* 複合式規則 => 超過兩個以上的規則名稱(包含兩個) */
+.header h1 {
+    position: absolute;
+    left: 90px;
+    top: 300px;
+    color: #fff;
+    font-size: 100px;
+    font-family: 微軟正黑體;
+    /* 線段長度 */
+    /* width: 100px; */
+    /* border-bottom: 5px double #000; */
+    border-bottom: 5px solid rgb(255, 255, 255);
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+
+.header .box {
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header .box h3 {
+    color: #fff;
+    font-size: 60px;
+}
+
+
+/* 頁首區-右側超連結 */
+.header ul {
+    /* 絕對定位 */
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    /* 取消項目符號 */
+    list-style: none;
+}
+
+/* 頁首區-右側超連結清單水平排列 */
+.header ul li {
+    float: left;
+    /* 右側超連結項目間距 */
+    margin-right: 20px;
+}
+
+/* 頁首區-右側超連結色彩 */
+.header ul li a {
+    color: #fff;
+    /* 選單區超連結底線:取消 */
+    text-decoration: none;
+}
+
+/* 頁頁首區-右側超連結被碰到時的變化 */
+.header ul li a:hover {
+    background-color: orangered;
+    color: #fff
+}
+
+/* 選單區 */
+.nav {
+    background-color: #795d59;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav ul li {
+    /* 水平排列 */
+    display: inline;
+}
+
+/* 選單區超連結 */
+.nav ul li a {
+    color: #795d59;
+    background-color: #cab29c;
+    text-decoration: none;
+    /* 內間距(縮排) => padding */
+    /* 順時針方向設定 */
+    /* padding: 10px 20px 10px 20px; */
+    padding: 10px 20px;
+    /* 圓角 */
+    border-radius: 5px;
+    /* 外間距 => margin */
+    margin-left: 15px;
+}
+
+/* 選單區超連結被碰到時的變化 */
+.nav ul li a:hover {
+    background-color: orangered;
+    color: #fff
+}
+
+/* 內容區  */
+.content {
+    background-color: rgb(231, 202, 173);
+    /* background-color: #fff; */
+    /* 內容置中 */
+    text-align: center;
+    /* 放大字體 */
+    font-size: 20px;
+    /* 行距 */
+    line-height: 2;
+}
+
+/* 資訊區 */
+.info {
+    background-color: #a39466;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info .box {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.info .box img {
+    /* 圓形=>寬度的一半(相對單位%) */
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.info .box h3 {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* 頁尾區 */
+.footer {
+    background-color: #514133;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

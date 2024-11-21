@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>景泰藍作品欣賞</title>
+    <!-- 燈箱效果lightbox.css -->
+    <link rel="stylesheet" href="./lightbox/css/lightbox.css">
+    <!-- 作品集.css -->
+    <link rel="stylesheet" href="./css/cloisonne1.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="header">
+            <diV><a href="#">藍寶齋</a></diV>
+            <h1>傑夫的“藝”想世界
+                <div class="box">
+                    <h3>藝術是什麼？</h3>
+                </div>
+            </h1>
+            <ul>
+                <li><a href="./cloisonne.html">展示區</a></li>
+                <li><a href="./index.html">回上一層</a></li>
+            </ul>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="./cloisonne.html">景泰藍</a></li>
+                <li><a href="./np.html">大漆</a></li>
+                <li><a href="./lg.html">琉晶</a></li>
+                <li><a href="./hailiu.html">海柳</a></li>
+                <li><a href="./uzr.html">生活禪</a></li>
+            </ul>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 旋轉木馬架構 -->
+    <div class="carousel">
+        <h1>景泰藍作品欣賞</h1>
+        <ul>
+            <li>
+                <a href="./images/cloisonne01.jpg" data-lightbox=" group ">
+                    <img src="./images/cloisonne01.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/cloisonne02.jpg" data-lightbox=" group ">
+                    <img src="./images/cloisonne02.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/cloisonne03.jpg" data-lightbox=" group ">
+                    <img src="./images/cloisonne03.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/cloisonne04.jpg" data-lightbox=" group ">
+                    <img src="./images/cloisonne04.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/cloisonne05.jpg.jpg" data-lightbox=" group ">
+                    <img src="./images/cloisonne05.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/cloisonne06.jpg" data-lightbox=" group ">
+                    <img src="./images/cloisonne06.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/cloisonne07.jpg.jpg" data-lightbox=" group ">
+                    <img src="./images/cloisonne07.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <h4>Lightbox2 is licensed under <a href="https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE">The
+                MIT
+                License.
+            </a></h4>
+    </div>
+
+    <!-- 頁尾區 -->
+    <div class="footer">
+        <h2>藍寶齋非遺藝術推廣中心</h2>
+        <h4>Copyright &copy;藍寶齋 版權所有. All rights reserved.</h4>
+    </div>
+
+    <!-- jQuery 主程式 -->
+    <script src="./js/jquery-1.11.3.min.js "></script>
+    <!-- 燈箱效果主程式lightbox.js -->
+    <script src="./lightbox//js/lightbox.js "></script>
+    <!-- 旋轉木馬主程式 -->
+    <script src="./js/jquery.jcarousellite.min.js "></script>
+    <!-- 自行撰寫JS -->
+    <!-- 駝峰式命名 -->
+    <!-- 小駝峰(第二個單字開始的自首為大寫) -->
+    <!-- 大駝峰(每一個單字開始的自首為大寫) -->
+    <script>
+        $(function () {
+            $('.carousel').jCarouselLite({
+                auto: 1000, //多久時間捲動(以毫秒為單位，1秒=1000毫秒)
+                speed: 500, //每次捲動的速度
+                scroll: 1, //每次捲動的張數
+                visible: 3, //每次可見的張數
+            });
+        });
+    </script>
+</body>
+
+</html>

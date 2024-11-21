@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PHOTOSHOP作品集</title>
+    <!-- 燈箱效果lightbox.css -->
+    <link rel="stylesheet" href="./lightbox/css/lightbox.css">
+    <!-- 作品集.css -->
+    <link rel="stylesheet" href="./css/ps.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="icon">
+                <div><a href="#">藍寶齋</a></div>
+            </div>
+            <h1>
+                <div class="box">
+                    <img src="./images/jeff0614.jpg" alt="">
+                    <h3>陳建福</h3>
+                </div>
+            </h1>
+            <ul>
+                <li><a href="./index_resume.html">請讀我</a></li>
+                <li><a href="./index.html">回首頁</a></li>
+            </ul>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="./photoshop.html">photoshop</a></li>
+                <li><a href="./illustrator.html">illustrator</a></li>
+                <li><a href="./sketchup.html">sketchup</a></li>
+                <li><a href="./3D Max.html">3D Max</a></li>
+                <li><a href="./hd.html">手繪</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- 旋轉木馬架構 -->
+    <div class="carousel">
+        <h1>PHOTOSHOP作品集</h1>
+        <ul>
+            <li>
+                <a href="./images/ps001.jpg" data-lightbox=" group ">
+                    <img src="./images/ps001.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps002.jpg" data-lightbox=" group ">
+                    <img src="./images/ps002.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps003.jpg" data-lightbox=" group ">
+                    <img src="./images/ps003.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps004.jpg" data-lightbox=" group ">
+                    <img src="./images/ps004.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps005.jpg" data-lightbox=" group ">
+                    <img src="./images/ps005.jpg" alt="">
+
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps006.jpg" data-lightbox=" group ">
+                    <img src="./images/ps006.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps007.jpg" data-lightbox=" group ">
+                    <img src="./images/ps007.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps008.jpg" data-lightbox=" group ">
+                    <img src="./images/ps008.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps009.jpg" data-lightbox=" group ">
+                    <img src="./images/ps009.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps010.jpg" data-lightbox=" group ">
+                    <img src="./images/ps010.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps011.jpg" data-lightbox=" group ">
+                    <img src="./images/ps011.jpg" alt="">
+
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps012.jpg" data-lightbox=" group ">
+                    <img src="./images/ps012.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/ps013.jpg" data-lightbox=" group ">
+                    <img src="./images/ps013.jpg" alt="">
+
+                </a>
+            </li>
+
+        </ul>
+        <h4>Lightbox2 is licensed under <a href="https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE">The
+                MIT
+                License.</a></h4>
+    </div>
+    </div>
+    <!-- 頁尾區 -->
+    <div class="footer">
+        <h2>藍寶齋非遺藝術推廣中心</h2>
+        <h4>Copyright &copy;藍寶齋 版權所有. All rights reserved.</h4>
+    </div>
+
+    <!-- jQuery 主程式 -->
+    <script src="./js/jquery-1.11.3.min.js "></script>
+    <!-- 燈箱效果主程式lightbox.js -->
+    <script src="./lightbox//js/lightbox.js "></script>
+    <!-- 旋轉木馬主程式 -->
+    <script src="./js/jquery.jcarousellite.min.js "></script>
+    <!-- 自行撰寫JS -->
+    <!-- 駝峰式命名 -->
+    <!-- 小駝峰(第二個單字開始的自首為大寫) -->
+    <!-- 大駝峰(每一個單字開始的自首為大寫) -->
+    <script>
+        $(function () {
+            $('.carousel').jCarouselLite({
+                auto: 1000, //多久時間捲動(以毫秒為單位，1秒=1000毫秒)
+                speed: 500, //每次捲動的速度
+                scroll: 1, //每次捲動的張數
+                visible: 3, //每次可見的張數
+            });
+        });
+    </script>
+</body>
+</body>
+
+</html>

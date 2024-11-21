@@ -1,0 +1,189 @@
+/* 米自是萬用字圓符號 => 所有的HTML標籤 */
+* {
+    /* 取消預設邊界 */
+    margin: 0;
+    /* 取消預設縮排 */
+    padding: 0;
+    /* 字型設定 */
+    font-family: 微軟正黑體;
+}
+
+a {
+    color: #fff;
+}
+
+.wrap {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: #f2e9c6;
+}
+
+/* 頁首區 */
+.header {
+    /* 對齊線 border */
+    /* border: 1px solid red */
+    /* 背景圖 */
+    background-image: url("../images/cc-bg-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 350px;
+    text-align: center;
+    /* 定位基準點 */
+    position: relative;
+}
+
+/* 頁首區-左側logo */
+/* 首頁區-左側超連結清單水平排列 */
+.header diV {
+    position: absolute;
+    left: 80px;
+    top: 40px;
+    /* 超連結字體顏色 */
+    color: #fff;
+}
+
+/* 首頁區左側超連結色彩 */
+.header diV a {
+    /* 選單區超連結底線:取消 */
+    text-decoration: none;
+}
+
+/* 選單區超連結被碰到時的變化 */
+.header diV a:hover {
+    background-color: orangered;
+    color: #fff
+}
+
+/* 頁首區-左側文字 */
+/* 複合式規則 => 超過兩個以上的規則名稱(包含兩個) */
+.header h1 {
+    position: absolute;
+    left: 90px;
+    top: 100px;
+    color: #fff;
+    font-size: 80px;
+    font-family: 微軟正黑體;
+    /* 線段長度 */
+    /* width: 100px; */
+    /* border-bottom: 5px double #000; */
+    border-bottom: 5px solid rgb(255, 255, 255);
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+
+.header .box {
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 0px;
+    top: 130px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header .box h3 {
+    color: #fff;
+    font-size: 45px;
+}
+
+/* 頁首區-右側超連結 */
+.header ul {
+    /* 絕對定位 */
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    /* 取消項目符號 */
+    list-style: none;
+}
+
+/* 頁首區-右側超連結清單水平排列 */
+.header ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+/* 頁首區-右側超連結色彩 */
+.header ul li a {
+    color: #fff;
+    /* 選單區超連結底線:取消 */
+    text-decoration: none;
+}
+
+/* 頁頁首區-右側超連結被碰到時的變化 */
+.header ul li a:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+/* 選單區 */
+.nav {
+    background-color: #795d59;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav ul li {
+    /* 水平排列 */
+    display: inline;
+}
+
+/* 選單區超連結 */
+.nav ul li a {
+    color: #795d59;
+    background-color: #cab29c;
+    text-decoration: none;
+    /* 內間距(縮排) => padding */
+    /* 順時針方向設定 */
+    /* padding: 10px 20px 10px 20px; */
+    padding: 10px 20px;
+    /* 圓角 */
+    border-radius: 5px;
+    /* 外間距 => margin */
+    margin-left: 15px;
+}
+
+/* 選單區超連結被碰到時的變化 */
+.nav ul li a:hover {
+    background-color: orangered;
+    color: #fff
+}
+
+.carousel {
+    /* border: 1px solid red; */
+    /* background-color: #ccc; */
+    background-color: rgb(231, 202, 173);
+    padding: 5px;
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.carousel img {
+    width: 387px;
+    height: 310px;
+    margin: 5px;
+    vertical-align: top;
+    /* 垂直對齊目的:為了將圖片下方的預設留白區平均分配在上下的位置 */
+}
+
+.carousel h4 a {
+    color: #000;
+}
+
+/* 頁尾區 */
+.footer {
+    background-color: #514133;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 1200px;
+    margin: auto;
+}
